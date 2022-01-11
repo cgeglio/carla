@@ -5,10 +5,16 @@
   height: 800px;
   justify-content: center;
 }
- 
-#about { 
+
+#about {
   background-color: #ff6f6f;
   align-items: center;
+
+  img {
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+  }
 
   .arrow-down {
     border-top: 40px solid #ff6f6f;
