@@ -1,7 +1,16 @@
-#skills {
-  background-color: #ffe5e5;
-  align-items: center;
+#skills,
+.skills-section {
   display: flex;
+  flex-direction: column;
   height: 800px;
   justify-content: center;
+}
+ 
+#skills { 
+  background-color: #ffe5e5;
+  align-items: center;
+
+  .arrow-down {
+    border-top: 40px solid #ffe5e5;
+  }
 }

@@ -1,7 +1,6 @@
 .nav-bar {
   align-items: center;
   background-color: #000f60;
-  color: #ffe5e5;
   display: flex;
   height: 100px;
   opacity: 0.9;
@@ -9,6 +8,7 @@
   width: 100%;
 
   .nav-bar-link {
+    color: #ffe5e5 !important;
     cursor: pointer;
     font-family: "Rubik Mono One", sans-serif;
     font-size: 20px;

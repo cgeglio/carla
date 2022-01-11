@@ -1,7 +1,16 @@
-#about {
-  background-color: #ff6f6f;
-  align-items: center;
+#about,
+.about-section {
   display: flex;
+  flex-direction: column;
   height: 800px;
   justify-content: center;
+}
+ 
+#about { 
+  background-color: #ff6f6f;
+  align-items: center;
+
+  .arrow-down {
+    border-top: 40px solid #ff6f6f;
+  }
 }
