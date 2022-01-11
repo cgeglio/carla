@@ -37,7 +37,7 @@
 
           &:hover {
             border-color: #1890ff;
-            border-right-width: 1px!important;
+            border-right-width: 1px !important;
           }
         }
 
@@ -46,12 +46,12 @@
           max-width: 100%;
           min-height: 100px;
           max-height: 450px;
-          transition: all .3s,height 0s;
+          transition: all 0.3s, height 0s;
         }
 
         button {
-          background: #1890ff;
-          border-color: #1890ff;
+          background: #475dd7;
+          border-color: #475dd7;
           border-radius: 40px;
           box-shadow: 0 1px #0000000b;
           color: #fff;
@@ -62,8 +62,8 @@
           width: 120px;
 
           &:hover {
-            background: #80C2FE;
-            border-color: #80C2FE;
+            background: #7385e9;
+            border-color: #7385e9;
           }
         }
       }
