@@ -3,7 +3,9 @@ import './skills.scss';
 function Skills() {
     return (
         <div id="skills">
-            Skillllls
+            <div className='section-header'>
+                Skills
+            </div>
         </div>
     )
 

@@ -3,7 +3,9 @@ import './contact.scss';
 function Contact() {
     return (
         <div id="contact">
-            Contact
+            <div className='section-header'>
+                Contact
+            </div>
         </div>
     )
 

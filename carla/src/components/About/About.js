@@ -3,7 +3,9 @@ import './about.scss';
 function About() {
     return (
         <div id="about">
-            Hi hi hi
+            <div className='section-header'>
+                About
+            </div>
         </div>
     )
 

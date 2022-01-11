@@ -3,7 +3,9 @@ import './projects.scss';
 function Projects() {
     return (
         <div id="projects">
-            I'm Carla 
+            <div className='section-header'>
+                Projects
+            </div>
         </div>
     )
 
