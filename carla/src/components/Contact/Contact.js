@@ -1,14 +1,11 @@
-import './contact.scss';
+import "./contact.scss";
 
 function Contact() {
-    return (
-        <div id="contact">
-            <div className='section-header'>
-                Contact
-            </div>
-        </div>
-    )
-
+  return (
+    <div id="contact">
+      <div className="section-header">Contact</div>
+    </div>
+  );
 }
 
 export default Contact;
