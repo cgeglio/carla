@@ -1,0 +1,17 @@
+.nav-bar {
+    align-items: center;
+    background-color: #000F60;
+    color: #FFE5E5;
+    display: flex;
+    height: 100px;
+    opacity: 90%;
+    position: fixed;
+    width: 100%;
+
+    .nav-bar-link {
+        cursor: pointer;
+        font-size: 24px;
+        font-weight: bold;
+        width: 20%;
+    }
+}

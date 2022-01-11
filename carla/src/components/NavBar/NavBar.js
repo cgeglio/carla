@@ -9,9 +9,15 @@ function NavBar() {
 
     return (
         <div className='nav-bar'>
-            <button onClick={scrollToTop}>
-                Back to Top
-            </button>
+            <Link
+            to="home"
+            spy={true}
+            smooth={true} 
+            duration={500} 
+            className='nav-bar-link' 
+            >
+                Home
+            </Link>
             <Link
                 to="about"
                 spy={true}
@@ -29,6 +35,24 @@ function NavBar() {
                 className='nav-bar-link' 
             >
                 Skills
+            </Link>
+            <Link
+                to="projects"
+                spy={true}
+                smooth={true} 
+                duration={500} 
+                className='nav-bar-link' 
+            >
+                Projects
+            </Link>
+            <Link
+                to="contact"
+                spy={true}
+                smooth={true} 
+                duration={500} 
+                className='nav-bar-link' 
+            >
+                Contact
             </Link>
         </div>
     )
