@@ -1,3 +1,4 @@
+import { isMobile } from "react-device-detect";
 import About from "./components/About";
 import NavBar from "./components/NavBar";
 import Skills from "./components/Skills";
@@ -10,8 +11,11 @@ import "./App.scss";
 function App() {
   return (
     <div className="App">
-      <NavBar />
-      <div className="section-container">
+      {!isMobile && <NavBar />}
+      <div
+        className="section-container"
+        style={!isMobile ? { paddingTop: 100 } : {}}
+      >
         <Home />
         <About />
         <Skills />
