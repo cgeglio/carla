@@ -5,7 +5,7 @@ function Home() {
   return (
     <div id="home">
       {!isMobile && <div className="arrow-down" />}
-      <div class="home-section">
+      <div className="home-section">
         <div className="section-header">Hello!</div>
       </div>
     </div>
