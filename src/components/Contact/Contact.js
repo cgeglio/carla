@@ -1,6 +1,12 @@
 import React from "react";
 import { Card } from "antd";
-import { useForm, ValidationError } from "@formspree/react";
+import { useForm } from "@formspree/react";
+import Form from "./Form";
+import behance from "../../assets/behance.png";
+import behanceHover from "../../assets/behanceHover.png";
+import { gitHubIcon } from "../../socialIcons";
+import { linkedInIcon } from "../../socialIcons";
+import { instagramIcon } from "../../socialIcons";
 import "./contact.scss";
 
 function Contact() {
@@ -9,48 +15,58 @@ function Contact() {
   return (
     <div id="contact">
       <div className="section-header">Contact</div>
-      <Card>
-        {state.succeeded ? (
-          <div className="success-message">Message sent. Thanks!</div>
-        ) : (
-          <form onSubmit={handleSubmit}>
-            <input
-              type="text"
-              name="name"
-              id="name"
-              placeholder="Name"
-              required
+      <div className="sub-header">
+        Send me a message or find me on the internet!
+      </div>
+      <div className="contact-section">
+        <Card>
+          {state.succeeded ? (
+            <div className="success-message">Message sent. Thanks!</div>
+          ) : (
+            <Form state={state} handleSubmit={handleSubmit} />
+          )}
+        </Card>
+        <div className="social">
+          <a
+            href="https://github.com/cgeglio"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            {gitHubIcon}
+          </a>
+          <a
+            href="https://www.linkedin.com/in/cgeglio"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            {linkedInIcon}
+          </a>
+          <a
+            className="behance"
+            href="https://www.behance.net/cgeglio"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <img
+              className="behance-icon"
+              src={behance}
+              alt="The beHance logo"
             />
-            <ValidationError prefix="Name" field="name" errors={state.errors} />
-            <input
-              id="email"
-              type="email"
-              name="email"
-              placeholder="Email"
-              required
+            <img
+              className="behance-icon-hover"
+              src={behanceHover}
+              alt="The beHance logo"
             />
-            <ValidationError
-              prefix="Email"
-              field="email"
-              errors={state.errors}
-            />
-            <textarea
-              id="message"
-              name="message"
-              placeholder="Message"
-              required
-            />
-            <ValidationError
-              prefix="Message"
-              field="message"
-              errors={state.errors}
-            />
-            <button type="submit" disabled={state.submitting}>
-              Submit
-            </button>
-          </form>
-        )}
-      </Card>
+          </a>
+          <a
+            href="https://www.instagram.com/carlately"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            {instagramIcon}
+          </a>
+        </div>
+      </div>
     </div>
   );
 }

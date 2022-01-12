@@ -3,67 +3,93 @@
   align-items: center;
   display: flex;
   flex-direction: column;
-  height: 800px;
+  height: 750px;
   justify-content: center;
 
-  .section-header {
+  .sub-header {
+    font-size: 24px;
     margin-bottom: 30px;
   }
 
-  .ant-card {
-    min-width: 300px;
-    width: 30%;
+  .contact-section {
+    display: flex;
+    justify-content: space-around;
 
-    .ant-card-body {
-      .success-message {
-        font-size: 18px;
+    .ant-card {
+      min-width: 500px;
+
+      .ant-card-body {
+        .success-message {
+          font-size: 18px;
+        }
+      }
+    }
+
+    .social {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-left: 50px;
+
+      img,
+      .social-circle {
+        margin: 10px;
       }
 
-      form {
-        align-items: center;
-        display: flex;
-        flex-direction: column;
+      .behance {
+        img {
+          height: 80px;
+        }
 
-        input,
-        textarea {
-          background-color: #fff;
-          border: 1px solid #d9d9d9;
-          border-radius: 2px;
-          color: #000000d9;
-          font-size: 14px;
-          margin-bottom: 20px;
-          padding: 4px 11px;
-          width: 100%;
+        .behance-icon-hover {
+          display: none;
+        }
 
-          &:hover {
-            border-color: #1890ff;
-            border-right-width: 1px !important;
+        &:hover {
+          .behance-icon {
+            display: none;
+          }
+
+          .behance-icon-hover {
+            display: initial;
           }
         }
+      }
 
-        textarea {
-          height: auto;
-          max-width: 100%;
-          min-height: 100px;
-          max-height: 450px;
-          transition: all 0.3s, height 0s;
+      .social-circle {
+        transition: 0.2s all ease;
+        height: 80px;
+
+        &:hover path {
+          fill: #7385e9 !important;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  #contact {
+    height: 900px;
+
+    .contact-section {
+      flex-direction: column;
+
+      .ant-card {
+        min-width: 400px;
+      }
+
+      .social {
+        flex-direction: initial;
+        margin: 50px 0 0 0;
+
+        .social-circle {
+          height: 50px;
         }
 
-        button {
-          background: #475dd7;
-          border-color: #475dd7;
-          border-radius: 40px;
-          box-shadow: 0 1px #0000000b;
-          color: #fff;
-          font-size: 16px;
-          height: 40px;
-          padding: 6px 20px;
-          text-shadow: 0 -1px 0 rgb(0 0 0 / 12%);
-          width: 120px;
-
-          &:hover {
-            background: #7385e9;
-            border-color: #7385e9;
+        .behance {
+          img {
+            height: 50px;
           }
         }
       }
