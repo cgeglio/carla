@@ -16,4 +16,19 @@
     border-right: 50px solid transparent;
     margin-bottom: -40px;
   }
+
+  .ant-card {
+    background-color: #ffe5e5;
+    border-color: #efd8d8;
+
+    input,
+    textarea {
+      background-color: #ffeeee !important;
+      border: 2px solid #efd8d8 !important;
+    }
+
+    .ant-card-head {
+      border-bottom: 2px solid #efd8d8;
+    }
+  }
 }
