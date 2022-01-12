@@ -20,7 +20,7 @@ function About() {
             <div>
               I have a certificate in <b>Front End Engineering</b> from Turing
               School of Software & Design and a B.A. in <b>History</b> (
-              <b>Art History</b> minor) from Purdue University. My design skills
+              <b>Art History</b> minor) from Purdue University. My design tools
               were honed through Savannah College of Art & Design's{" "}
               <b>Graphic Design</b> program.
             </div>

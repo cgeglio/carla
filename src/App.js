@@ -1,7 +1,7 @@
 import { isMobile } from "react-device-detect";
 import About from "./components/About";
 import NavBar from "./components/NavBar";
-import Skills from "./components/Skills";
+import Tools from "./components/Tools";
 import Home from "./components/Home";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
@@ -18,7 +18,7 @@ function App() {
       >
         <Home />
         <About />
-        <Skills />
+        <Tools />
         <Projects />
         <Contact />
       </div>
