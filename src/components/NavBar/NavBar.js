@@ -23,13 +23,13 @@ function NavBar() {
         About
       </Link>
       <Link
-        to="skills"
+        to="tools"
         spy={true}
         smooth={true}
         duration={500}
         className="nav-bar-link"
       >
-        Skills
+        Tools
       </Link>
       <Link
         to="projects"

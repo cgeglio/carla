@@ -1,7 +1,16 @@
-#projects {
-  background-color: #475dd7;
-  align-items: center;
+#projects,
+.projects-section {
   display: flex;
+  flex-direction: column;
   height: 800px;
   justify-content: center;
+}
+ 
+#projects { 
+  background-color: #475dd7;
+  align-items: center;
+
+  .arrow-down {
+    border-top: 40px solid #475dd7;
+  }
 }
