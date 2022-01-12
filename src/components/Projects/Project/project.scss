@@ -75,6 +75,13 @@
   }
 }
 
+@media only screen and (max-width: 600px) {
+  .project {
+    margin: 10px !important;
+    width: 350px !important;
+  }
+}
+
 @media only screen and (max-width: 1100px) {
   .project {
     max-height: 400px;
@@ -100,15 +107,19 @@
       height: 60px;
       padding: 0;
 
-      .card-title {
-        padding: 10px 15px;
+      .ant-card-head-title {
+        padding: 0;
 
-        img {
-          height: 25px;
-        }
+        .card-title {
+          padding: 10px 15px;
 
-        i {
-          font-size: 38px;
+          img {
+            height: 25px;
+          }
+
+          i {
+            font-size: 38px;
+          }
         }
       }
     }
