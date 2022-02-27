@@ -28,7 +28,7 @@ const projects = [
       "A tarot reading project. Choose your preferred card spread, ask a question, and receive a fortune!",
     img: [tragicMagic],
     github: "https://github.com/cgeglio/tragic-magic",
-    website: "https://tragicmagic.org",
+    website: "https://cgeglio.github.io/tragic-magic/",
     tech: [
       "react-original-wordmark",
       "sass-original",
