@@ -20,7 +20,7 @@ function Tools() {
               <i className="devicon-jest-plain"></i>
               <i className="devicon-circleci-plain"></i>
               <i className="devicon-git-plain-wordmark"></i>
-              <i className="devicon-nodejs-plain"></i>
+              <i className="devicon-nextjs-original"></i>
               <i className="devicon-webflow-original"></i>
               <i className="devicon-vscode-plain"></i>
               <i className="devicon-illustrator-plain"></i>
