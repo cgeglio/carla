@@ -13,9 +13,10 @@ function About() {
           />
           <div className="section-text">
             <div>
-              I worked for 3 different libraries, 2 universities, an art museum,
-              a florist, and a composting company before trying my hand at
-              software development.
+              Like many coding bootcamp graduates, I have an eclectic
+              background. Before trying my hand at software development, I
+              worked for 3 different libraries, 2 universities, an art museum, a
+              florist, and a composting company.
             </div>
             <div>
               I have a certificate in <b>Front End Engineering</b> from Turing
