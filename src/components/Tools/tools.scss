@@ -2,7 +2,7 @@
 .tools-section {
   display: flex;
   flex-direction: column;
-  height: 800px;
+  height: 700px;
   justify-content: center;
 }
 
@@ -20,7 +20,7 @@
       justify-content: space-around;
 
       .experience {
-        max-width: 40%;
+        max-width: 80%;
 
         .text-header {
           font-size: 28px;
@@ -55,14 +55,14 @@
 @media only screen and (max-width: 500px) {
   #tools,
   .tools-section {
-    height: 1200px !important;
+    height: 1000px !important;
   }
 }
 
 @media only screen and (max-width: 900px) {
   #tools,
   .tools-section {
-    height: 900px;
+    height: 700px;
   }
 
   #tools {
@@ -100,29 +100,3 @@
     }
   }
 }
-
-// @media only screen and (min-width: 1000px) {
-//   #tools,
-//   .tools-section {
-//     height: 700px;
-//   }
-
-//   #tools {
-//     .tools-section {
-//       .section-header {
-//         font-size: 40px;
-//       }
-
-//       .section-text {
-//         .experience {
-//           .tool-icons {
-//             i {
-//               font-size: 60px;
-//               padding: 10px;
-//             }
-//           }
-//         }
-//       }
-//     }
-//   }
-// }

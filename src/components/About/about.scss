@@ -50,16 +50,18 @@
   }
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 900px) {
   #about,
   .about-section {
-    height: 1100px;
+    height: 1200px !important;
   }
 }
 
 @media only screen and (max-width: 1300px) {
   #about {
     .about-section {
+      height: 1000px;
+
       .section-header {
         font-size: 40px;
         margin-bottom: 10px;
